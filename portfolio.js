@@ -1,13 +1,13 @@
-let icon=document.getElementById('icon');
+let js=document.getElementById('js');
 let degree=0;
-function rotateIcon(){
+function rotateJs(){
   degree = degree + 6 ;
   degree = degree % 360;
   if ((0 <= degree && degree < 90) || (270 <= degree && degree < 360)) {
-    icon.className = 'face';
+    js.className = 'face';
   } else {
-    icon.className = 'back';
+    js.className = 'back';
   }
-  icon.style.transform = 'rotateX(' + degree + 'deg)';
+  js.style.transform = 'rotateX(' + degree + 'deg)';
 }
-setInterval(rotateIcon, 20);
+setInterval(rotateJs, 20);
